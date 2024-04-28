@@ -35,3 +35,16 @@ body{
 p{
     font-size: 18px;
 }
+
+#myCanvas{
+    width:400;
+    height: 300;
+    border: 1px solid black;
+    
+}
+
+#shapeCanvas{
+    width:"400";
+    height:200; 
+    border:1px solid #000;
+}

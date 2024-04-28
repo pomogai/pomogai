@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 12</title>
+</head>
+<body>
+    <header>
+        <h1 id="myName">text to pass validation</h1>
+    </header>
+    
+    <div>
+        <h1>Current Date:</h1>
+        <p id="date"></p>
+    </div>
+
+    <canvas id="myCanvas"></canvas>
+    <canvas id="shapeCanvas"></canvas>
+
+    <h1>What I've learned:</h1>
+    <p>Through completing these activities, I learned how to manipulate the HTML DOM using JavaScript. I learned how to dynamically update the content of a webpage, including adding elements, modifying text, and drawing shapes on canvases. This experience taught me valuable skills that I can apply to my own current and future web development projects. I now have a better understanding of how to enhance user interaction and create more dynamic and engaging web experiences using JavaScript. I will use this knowledge to improve the functionality and interactivity of my own websites and applications.</p>
+
+    <script>
+        //date
+        var currentDate = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+        document.getElementById("date").innerText = formattedDate;
+        //my name
+        document.getElementById("myName").innerText = "Maria";
+        
+        //canvas with my name
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Comic Sans MS";
+        ctx.fillText("Maria", 50, 100);
+
+        //canvas with line, circle and square
+        var shapeCanvas = document.getElementById("shapeCanvas");
+        var shapeCtx = shapeCanvas.getContext("2d");
+
+
+        //line
+        shapeCtx.beginPath();
+        shapeCtx.moveTo(0, 50);
+        shapeCtx.lineTo(300, 50);
+        shapeCtx.strokeStyle = "purple";
+        shapeCtx.lineWidth = 3;
+        shapeCtx.stroke();
+
+        //circle
+        shapeCtx.beginPath();
+        shapeCtx.arc(160, 80, 57, 0, 2*Math.PI);
+        shapeCtx.strokeStyle = "red";
+        shapeCtx.lineWidth = 3;
+        shapeCtx.stroke();
+
+        //square
+        shapeCtx.beginPath();
+        shapeCtx.rect(120, 40, 80, 80);
+        shapeCtx.fillStyle = "white";
+        shapeCtx.fill();
+        shapeCtx.lineWidth = 3;
+        shapeCtx.strokeStyle = "black";
+        shapeCtx.stroke
+
+
+    </script>
+</body>
+</html>
