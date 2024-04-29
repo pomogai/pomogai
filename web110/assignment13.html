@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 13</title>
+</head>
+<body>
+    <header>
+        <h1>Assignment 13</h1>
+    </header>
+
+    <h2>Single-Table SELECT Statements</h2>
+    <p>Below are some examples of single-table SELECT statements:</p>
+    <ul>
+        <li>SELECT * FROM CUSTOMERS;</li>
+        <li>SELECT customer_name, city FROM CUSTOMERS WHERE country='USA';</li>
+        <li>SELECT * FROM ORDERS WHERE order_date BETWEEN '2022-01-01' AND '2022-12-31';</li>
+        <li>SELECT product_name, unit_price FROM PRODUCTS ORDER BY unit_price DESC;</li>
+        <li>SELECT COUNT(*) AS total_customers FROM CUSTOMERS;</li>
+    </ul>
+
+    <h2>INSERT, UPDATE, and DELETE Statements</h2>
+    <p>Below are some examples of INSERT, UPDATE, and DELETE statements:</p>
+    <ul>
+        <li>INSERT INTO CUSTOMERS (customer_name, city, country) VALUES ('John Doe', 'New York', 'USA');</li>
+        <li>UPDATE CUSTOMERS SET city='Los Angeles' WHERE customer_id=123;</li>
+        <li>DELETE FROM CUSTOMERS WHERE customer_id=456;</li>
+    </ul>
+
+    <h2>What I Learned</h2>
+    <p>Through completing these activities, I learned how to perform basic CRUD (Create, Read, Update, Delete) operations in a relational database using SQL. I gained a better understanding of how to write SQL queries to insert new data into tables, update existing data, and delete unwanted data. Additionally, I learned about the importance of data integrity and how to use SQL statements safely to avoid unintended consequences.</p>
+    <p>I can apply this learning to my own current and future projects by effectively managing and manipulating data in databases. Whether I'm building a web application, managing business data, or conducting data analysis, SQL skills are essential for interacting with relational databases. Understanding SQL enables me to design efficient database schemas, write optimized queries, and ensure the integrity and security of my data.</p>
+
+</body>
+</html>
