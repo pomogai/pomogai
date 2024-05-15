@@ -48,3 +48,13 @@ p{
     height:200; 
     border:1px solid #000;
 }
+
+.video_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+}
